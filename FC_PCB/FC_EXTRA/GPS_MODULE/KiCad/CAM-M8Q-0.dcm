@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CAM-M8Q-0
+D CAM-M8 RF Receiver BeiDou, GLONASS, GNSS, GPS, QZSS 1.575GHz -167dBm On-Board, Chip Module
+K
+F https://content.u-blox.com/sites/default/files/CAM-M8-FW3_DataSheet_%28UBX-15031574%29.pdf
+$ENDCMP
+#
+#End Doc Library
