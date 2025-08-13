@@ -4106,6 +4106,10 @@
 		(uuid "1de24adc-e0b9-426d-90ee-414e2d6e1891")
 	)
 	(no_connect
+		(at 125.73 139.7)
+		(uuid "3ad383ce-47a5-4218-90bf-f5270d313b86")
+	)
+	(no_connect
 		(at 125.73 175.26)
 		(uuid "3c8b785e-825e-47d2-b553-a0edda0635dd")
 	)
@@ -4114,12 +4118,20 @@
 		(uuid "48b88a3e-aa59-4c22-ab23-52cb021807df")
 	)
 	(no_connect
+		(at 125.73 142.24)
+		(uuid "49794d8c-e2d6-40fa-ac29-14495ce96d96")
+	)
+	(no_connect
 		(at 34.29 114.3)
 		(uuid "4c198c8f-c35b-4f24-88bd-18353c39a427")
 	)
 	(no_connect
 		(at 261.62 44.45)
 		(uuid "59956070-54b3-467a-bc47-ab4fe64f8c05")
+	)
+	(no_connect
+		(at 125.73 149.86)
+		(uuid "646998cc-48f9-4f69-aa53-784ec08d667a")
 	)
 	(no_connect
 		(at 125.73 167.64)
@@ -4134,12 +4146,20 @@
 		(uuid "75a37641-62a6-4ad4-9409-4b98deb4c592")
 	)
 	(no_connect
+		(at 125.73 154.94)
+		(uuid "88740e93-55e0-4017-aea8-d75137301dce")
+	)
+	(no_connect
 		(at 261.62 67.31)
 		(uuid "916c75f6-bc96-4da9-8c27-d6d5f0591906")
 	)
 	(no_connect
 		(at 125.73 114.3)
 		(uuid "98519bd6-6c10-47df-93f1-e63a73c5fe8c")
+	)
+	(no_connect
+		(at 125.73 147.32)
+		(uuid "a1f35d51-ec0d-460b-8501-2dd54e758edd")
 	)
 	(no_connect
 		(at 261.62 39.37)
@@ -4154,8 +4174,12 @@
 		(uuid "b1786717-1794-444e-9a53-cdf0eada4c44")
 	)
 	(no_connect
-		(at 125.73 177.8)
-		(uuid "c504a059-caff-40b2-9b3e-d5c354012652")
+		(at 125.73 152.4)
+		(uuid "b8500dd6-22b6-47e8-b11c-f589299bf97c")
+	)
+	(no_connect
+		(at 34.29 165.1)
+		(uuid "badaa239-784e-4676-876e-89ce8b60c673")
 	)
 	(no_connect
 		(at 261.62 64.77)
@@ -5217,17 +5241,18 @@
 		)
 		(uuid "e03ed127-cdb2-40b4-932f-c9ab76569605")
 	)
-	(hierarchical_label "ESP_I2C_SDA"
+	(hierarchical_label "ESP_SPI3_SCK"
 		(shape input)
-		(at 125.73 132.08 0)
+		(at 34.29 170.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.1588)
+				(thickness 0.254)
+				(bold yes)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "086063d0-bf90-4438-846c-e3af805a5e0d")
+		(uuid "144f11cc-d51a-4edd-8a10-438d574e3781")
 	)
 	(hierarchical_label "GPIO_9"
 		(shape input)
@@ -5241,19 +5266,6 @@
 			(justify left)
 		)
 		(uuid "16258098-dfb8-427b-bb82-01e298b0af28")
-	)
-	(hierarchical_label "GPIO_8"
-		(shape input)
-		(at 125.73 142.24 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "20a96239-f7c3-4211-b36d-9d72f3bdaa23")
 	)
 	(hierarchical_label "ESC_PWM2"
 		(shape input)
@@ -5277,32 +5289,6 @@
 		)
 		(uuid "2d05aecc-80fb-4ca6-aca4-19e927ed6f52")
 	)
-	(hierarchical_label "ESP_SPI2_SCK"
-		(shape input)
-		(at 125.73 152.4 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "2da0b685-e3a8-4a0c-9887-b4d6b2d0968c")
-	)
-	(hierarchical_label "ESP_HOLD"
-		(shape input)
-		(at 34.29 165.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "2e912be6-23a6-47f9-8af8-52e12f79771e")
-	)
 	(hierarchical_label "ESP_UART1_RX"
 		(shape input)
 		(at 125.73 162.56 0)
@@ -5315,19 +5301,33 @@
 		)
 		(uuid "35ef0b31-5665-4e8c-9f65-1bb2cdba8be9")
 	)
-	(hierarchical_label "ESP_UART2_RX"
+	(hierarchical_label "ESP_SPI3_MISO"
 		(shape input)
-		(at 125.73 139.7 0)
+		(at 34.29 175.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
-				(thickness 0.1588)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify right)
+		)
+		(uuid "4bedc519-f427-463f-b36b-2e5a8fe887c3")
+	)
+	(hierarchical_label "ESP_HOLD"
+		(shape input)
+		(at 125.73 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
-		(uuid "4aca68d8-b9ee-4559-a25b-35611d52c2e0")
+		(uuid "58182a3c-88d9-419f-a120-1e26d7dbd44d")
 	)
-	(hierarchical_label "ESP_SPI3_MOSI"
+	(hierarchical_label "ESP_WP"
 		(shape input)
 		(at 34.29 172.72 180)
 		(effects
@@ -5338,32 +5338,7 @@
 			)
 			(justify right)
 		)
-		(uuid "62dc7635-0643-4ed5-a3c4-8be6a7a0748a")
-	)
-	(hierarchical_label "ESP_UART2_TX"
-		(shape input)
-		(at 125.73 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "6488c57e-fdab-42ff-93cb-11fc269496c6")
-	)
-	(hierarchical_label "ESP_SPI3_CS0"
-		(shape input)
-		(at 34.29 170.18 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "66c3a91d-0d5a-47fc-9bab-025308c237bb")
+		(uuid "607d09b2-78cc-43ca-9417-6014d9ed44a1")
 	)
 	(hierarchical_label "GPIO_21"
 		(shape input)
@@ -5378,19 +5353,6 @@
 		)
 		(uuid "7bf9a7f8-f579-4194-959b-8deefbfb1c0b")
 	)
-	(hierarchical_label "ESP_SPI2_MISO"
-		(shape input)
-		(at 125.73 154.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left)
-		)
-		(uuid "82c32b4d-ea27-4b21-8281-4a6bcff59002")
-	)
 	(hierarchical_label "ESP_UART1_TX"
 		(shape input)
 		(at 125.73 160.02 0)
@@ -5403,6 +5365,18 @@
 		)
 		(uuid "8b9791d8-3e37-4cb5-9ee0-9f3abe9baa3d")
 	)
+	(hierarchical_label "ESP_I2C_SDA"
+		(shape input)
+		(at 125.73 137.16 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "9991b097-bccf-485b-a959-650ea8f19707")
+	)
 	(hierarchical_label "ESC_PWM3"
 		(shape input)
 		(at 34.29 121.92 180)
@@ -5414,7 +5388,7 @@
 		)
 		(uuid "ab54ffb5-d3d6-4536-85bb-cdff1b325d39")
 	)
-	(hierarchical_label "ESC_PWM3"
+	(hierarchical_label "ESC_PWM4"
 		(shape input)
 		(at 34.29 119.38 180)
 		(effects
@@ -5425,20 +5399,20 @@
 		)
 		(uuid "ac5535c9-3b83-480f-bdb1-b569c14b4e67")
 	)
-	(hierarchical_label "ESP_SPI2_MOSI"
+	(hierarchical_label "ESP_SPI3_MOSI"
 		(shape input)
-		(at 125.73 149.86 0)
+		(at 34.29 167.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "b65d0f7e-e94d-4c80-a46c-10f91ebe4cab")
+		(uuid "c64c6cf1-b245-4b50-87fe-3bc0bdc40d93")
 	)
-	(hierarchical_label "ESP_SPI3_MISO"
+	(hierarchical_label "ESP_SPI3_CS0"
 		(shape input)
 		(at 34.29 177.8 180)
 		(effects
@@ -5449,24 +5423,11 @@
 			)
 			(justify right)
 		)
-		(uuid "c34a87a2-17b6-47f0-824a-76ec35f381fb")
+		(uuid "c7a684fe-27b6-4608-b3d7-63e7ec9bc5e3")
 	)
-	(hierarchical_label "ESP_SPI3_SCK"
+	(hierarchical_label "GPIO_8"
 		(shape input)
-		(at 34.29 175.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "cc467d0a-92d1-40a2-bd54-2e29c85fb32c")
-	)
-	(hierarchical_label "ESP_SPI2_CS0"
-		(shape input)
-		(at 125.73 147.32 0)
+		(at 125.73 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5475,7 +5436,19 @@
 			)
 			(justify left)
 		)
-		(uuid "d62bcef8-ae33-460d-9191-53e12c362c4a")
+		(uuid "d4c2e7be-eb5f-4d71-aa8b-556edf644e7b")
+	)
+	(hierarchical_label "ESP_I2C_SCL"
+		(shape input)
+		(at 125.73 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.1588)
+			)
+			(justify left)
+		)
+		(uuid "d71a84dc-913c-46eb-92af-b3db9c2d173c")
 	)
 	(hierarchical_label "GPIO_14"
 		(shape input)
@@ -5490,18 +5463,6 @@
 		)
 		(uuid "df681ed1-67c7-4da9-84cd-eb10e2ab7d8d")
 	)
-	(hierarchical_label "ESP_I2C_SCL"
-		(shape input)
-		(at 125.73 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.1588)
-			)
-			(justify left)
-		)
-		(uuid "f9330c6c-e87d-456c-847f-452ebec01f03")
-	)
 	(hierarchical_label "ESC_PWM1"
 		(shape input)
 		(at 34.29 127 180)
@@ -5512,19 +5473,6 @@
 			(justify right)
 		)
 		(uuid "fb26bf6c-d9fd-45e1-8e77-67e29ae2f6ee")
-	)
-	(hierarchical_label "ESP_WP"
-		(shape input)
-		(at 34.29 167.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify right)
-		)
-		(uuid "ff3722ff-af5c-486e-84d0-56364dde525b")
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -7717,22 +7665,22 @@
 			)
 		)
 		(pin "5"
-			(uuid "4cf100c5-81a6-4900-a07b-36d8f97fb037")
+			(uuid "4cf100c5-81a6-4900-a07b-36d8f97fb038")
 		)
 		(pin "4"
-			(uuid "1dc43e83-f783-4505-8238-93f829d56f02")
+			(uuid "1dc43e83-f783-4505-8238-93f829d56f03")
 		)
 		(pin "6"
-			(uuid "736fea13-918c-44c7-a76f-0cc615d22797")
+			(uuid "736fea13-918c-44c7-a76f-0cc615d22798")
 		)
 		(pin "1"
-			(uuid "00e2223f-1216-4895-8d7d-59622629dd11")
+			(uuid "00e2223f-1216-4895-8d7d-59622629dd12")
 		)
 		(pin "2"
-			(uuid "3684f009-fd75-4408-9521-225016476639")
+			(uuid "3684f009-fd75-4408-9521-22501647663a")
 		)
 		(pin "3"
-			(uuid "08cde1a0-e202-403c-a2b4-8babb83ba074")
+			(uuid "08cde1a0-e202-403c-a2b4-8babb83ba075")
 		)
 		(instances
 			(project ""
